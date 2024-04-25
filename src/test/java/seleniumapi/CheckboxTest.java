@@ -20,17 +20,18 @@ public class CheckboxTest {
     }
 
     @Test
-    public void newTest(){
+    public void newTest() {
         WebElement absCheckbox = driver.findElement(By.name("abs"));
-        if(!absCheckbox.isSelected()) {
+        if (!absCheckbox.isSelected()) {
             absCheckbox.click();
         }
         boolean isSelected = absCheckbox.isSelected();
         Assert.assertTrue(isSelected);
     }
-
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 }
+
+//    @AfterMethod
+//    public void tearDown() {
+//        driver.quit();
+//    }
+//}
